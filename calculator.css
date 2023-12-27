@@ -1,0 +1,28 @@
+/* css code for calculator*/
+#calculator{
+    height:410px;
+    width:250px;
+    border:2px solid #142f44;
+    border-radius: 4px;
+    background-color: #205b7a;
+    margin-left: 40%;
+}
+#display-text{
+    width:85%;
+    margin:10px;
+    height:50px;
+    background-color: #a2bbcf;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.btn{
+    width:50px;
+    height:50px;
+    margin: 2px;
+    font-size: 30px;
+    background-color: #1d3849;
+    color:#a2bbcf;
+}

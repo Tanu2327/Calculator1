@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="calculator">
+        <!-- Display screen of calculator-->
+        <input type="text" id="display-text" readonly>
+        <!-- coding for 'c' (clear) button-->
+        <div class="btn-container">
+            <button class="btn" onclick="
+            currentdisplay='';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">C</button>
+            <!-- coading for '1' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'1';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">1</button>
+            <!-- codes for '2' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'2';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;     
+            ">2</button>
+        </div>
+        <div class="btn-container">
+             <!-- codes for '+' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'+';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">+</button>
+             <!-- codes for '3' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'3';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">3</button>
+             <!-- codes for '4' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'4';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">4</button>
+        </div>
+        <div class="btn-container">
+             <!-- codes for '-' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'-';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">-</button>
+             <!-- codes for '5' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'5';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;     
+            ">5</button>
+             <!-- codes for '6' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'6';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">6</button>
+        </div>
+        <div class="btn-container">
+             <!-- codes for '*' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'*';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">*</button>
+             <!-- codes for '7' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'7';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">7</button>
+             <!-- codes for '8' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'8';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">8</button>
+        </div>
+        <div class="btn-container">
+             <!-- codes for '/' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'/';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">/</button>
+             <!-- codes for '=' button-->
+            <button class="btn" onclick="
+            let result=eval(currentdisplay);
+            currentdisplay=result;  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">=</button>
+             <!-- codes for '9' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'9';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">9</button>
+        </div>
+        <div class="btn-container">
+             <!-- codes for 0 button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'0';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">0</button>
+             <!-- codes for '.' button-->
+            <button class="btn" onclick="
+            currentdisplay=currentdisplay+'.';  
+            document.querySelector('#display-text')
+            .value=currentdisplay;    
+            ">.</button>
+        </div>
+    </div>
+    <!-- Here are javaScript code to provide a functionality to calculator.-->
+    <script>
+        let currentdisplay='';
+        document.querySelector('#display-text')
+        .value=currentdisplay;
+    </script>
+</body>
+</html>
